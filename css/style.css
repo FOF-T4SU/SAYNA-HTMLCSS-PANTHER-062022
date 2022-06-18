@@ -1,0 +1,320 @@
+/* ************* Mise en forme generale ************************ */
+
+
+/* reinitialisations de marges */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* declaration des variables de couleurs */
+
+:root {
+    --white: #ffffff;
+    --purplelight: #f2cff2;
+    --purplegrey: #9e91b7;
+    --purple: #df99f2;
+    --violet: #3d2da6;
+    --blue: #07338c;
+    --bluedark: #021740;
+}
+
+
+/* mise en forme du body */
+
+body {
+    background-image: url("../Illustrations + Logo/All Pages/arrière_plan.png");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    color: var(--white);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+/* mise en forme du header */
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+/* mise en forme de h1 et h2 */
+
+h1 {
+    font-size: 68px;
+    color: var(--purplegrey);
+}
+
+h2 {
+    font-size: 32px;
+    color: var(--purplegrey);
+}
+
+
+/* style des sections */
+
+section {
+    margin-top: 30px;
+}
+
+p {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+a {
+    color: var(--white);
+}
+
+
+/* style du footer */
+
+footer {
+    background-image: url("../Illustrations + Logo/All pages/back_footer.png");
+    background-size: cover;
+    height: 692px;
+}
+
+footer h3 {
+    font-size: 22px;
+    letter-spacing: 6px;
+    margin: 15px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 10%;
+}
+
+.logo-foot {
+    padding-top: 5%;
+}
+
+.logo-foot img[alt="logo"] {
+    position: relative;
+    top: -200px;
+    left: -250px;
+}
+
+.nav-foot,
+.social {
+    margin-top: 15%;
+}
+
+.nav-foot ul li {
+    list-style-type: none;
+    padding-top: 15px;
+}
+
+.nav-foot ul li a {
+    text-decoration: none;
+}
+
+.social img {
+    margin: 15px;
+}
+
+.copy {
+    position: relative;
+    left: 700px;
+    top: -100px;
+    font-size: 10px;
+}
+
+.copy * {
+    display: inline;
+    margin: 5px;
+}
+
+
+/* ***************** Mise en forme de la page accueil ************************* */
+
+
+/* design de la section intro */
+
+.intro {
+    width: 40%;
+    position: relative;
+    left: 150px;
+    top: 200px;
+}
+
+#intro {
+    background-image: url("../Illustrations + Logo/Accueil/Pantherhome1..png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 300px;
+    height: 875px;
+}
+
+
+/* design de la section figure */
+
+.figure {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    background-color: var(--bluedark);
+    height: 341px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.figure img {
+    margin-left: 15px;
+}
+
+.figure .descrip {
+    padding-left: 15px;
+}
+
+#figure {
+    height: 450px;
+}
+
+
+/* mise en forme la section story */
+
+.container-story {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-story div {
+    margin: 0px 25px 0px 0px;
+}
+
+.container-story img {
+    position: relative;
+    top: -100px;
+    left: 50px;
+    z-index: 10;
+}
+
+
+/* design de la carte */
+
+.card {
+    background-color: var(--white);
+    color: var(--bluedark);
+    text-align: center;
+    border-radius: 25px;
+    padding: 50% 5% 25% 5%;
+    position: relative;
+    top: -350px;
+}
+
+.card p {
+    width: 80%;
+    margin: 15px auto;
+}
+
+.card button {
+    background-color: var(--violet);
+    color: var(--white);
+    margin: 5px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.card span {
+    font-weight: bold;
+}
+
+
+/* design de la section contact */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background: linear-gradient( rgba(255, 255, 255, 100%) 15%, rgba(255, 255, 255, 10%));
+    color: var(--bluedark);
+    border-radius: 150px;
+    margin-top: 20%;
+    padding: 3% 10%;
+    text-align: center;
+}
+
+.form h3 {
+    font-size: 22px;
+}
+
+.form p {
+    text-align: center;
+}
+
+.form input {
+    width: 520px;
+    height: 56px;
+    border-radius: 38px;
+    background: none;
+    color: var(--bluedark);
+    border: 1px solid var(--bluedark);
+    padding: 15px;
+    font-weight: bold;
+}
+
+.form textarea {
+    width: 520px;
+    border-radius: 38px;
+    background: none;
+    border: 1px solid var(--bluedark);
+    padding: 15px;
+    font-weight: bold;
+}
+
+.form input[type="submit"] {
+    width: 174px;
+    height: 54px;
+    border: none;
+    background: var(--white);
+}
+
+.form input[type="submit"]:hover {
+    box-shadow: 0px 0px 20px var(--bluedark);
+}
+
+#contact {
+    background-image: url("../Illustrations + Logo/Accueil/Pantherhome7.png");
+    background-size: cover;
+    height: 1000px;
+}
+
+
+/* *************** Mise en forme de la page Wakanda ************************ */
