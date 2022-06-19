@@ -23,6 +23,29 @@
 }
 
 
+/* installation des polices */
+
+@font-face {
+    font-family: "Wakanda";
+    src: url("../Polices/WakandaForever-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url("../Polices/cantarell-regular_[fr.allfont.net].ttf");
+}
+
+@font-face {
+    font-family: "Beyno";
+    src: url("../Polices/BEYNO.ttf");
+}
+
+@font-face {
+    font-family: "Panthera";
+    src: url("../Polices/panthera.otf");
+}
+
+
 /* mise en forme du body */
 
 body {
@@ -31,18 +54,19 @@ body {
     background-repeat: no-repeat;
     overflow-x: hidden;
     color: var(--white);
+    font-family: "Cantarell", sans-serif, serif;
     font-size: 16px;
     font-weight: normal;
     width: 100%;
 }
 
-
-/* mise en forme du header */
-
 .container {
     width: 80%;
     margin: auto;
 }
+
+
+/* mise en forme du header */
 
 nav {
     display: flex;
@@ -63,17 +87,26 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--white);
+    font-family: "Beyno", sans-serif, serif;
+    padding: 10px 0px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--purplegrey);
 }
 
 
 /* mise en forme de h1 et h2 */
 
 h1 {
+    font-family: "Panthera", sans-serif, serif;
     font-size: 68px;
     color: var(--purplegrey);
 }
 
 h2 {
+    font-family: "Beyno", sans-serif, serif;
     font-size: 32px;
     padding-top: 15px;
     color: var(--purplegrey);
@@ -222,7 +255,7 @@ footer h3 {
 .figure {
     width: 90%;
     position: relative;
-    left: 5%;
+    left: 10%;
     background-color: var(--bluedark);
     height: 341px;
     display: flex;
@@ -234,16 +267,20 @@ footer h3 {
     margin-left: 15px;
 }
 
-.figure .descrip {
-    padding-left: 15px;
+.figure h2 {
+    font-size: 22px;
+    margin: 15px;
+}
+
+.figure p {
+    font-size: 10px;
+    margin: 15px;
 }
 
 
 /* mise en forme la section story */
 
 .story {
-    /* width: 80%;
-    margin: auto; */
     display: flex;
     justify-content: space-between;
 }
@@ -357,25 +394,166 @@ img[alt="black"] {
 
 /* *************** Mise en forme de la page Wakanda ************************ */
 
+
+/* design de la section forever */
+
 #forever {
     background-image: url("../Illustrations + Logo/Wakanda/Pantherwakanda1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
-    height: 1131px;
+    position: relative;
+    top: -30px;
+    right: -50px;
+    height: 105vh;
 }
 
 .forever {
-    width: 30%;
+    width: 40%;
     position: relative;
     left: 150px;
-    top: 300px;
+    top: 200px;
 }
+
+.forever h1 {
+    font-family: "Beyno", sans-serif, serif;
+}
+
+.forever h2 {
+    font-family: "Wakanda", sans-serif, serif;
+    font-size: 43px;
+}
+
+
+/* design de la section story wakanda */
 
 #story-wakanda {
     background-image: url("../Illustrations + Logo/Wakanda/Pantherwakanda2.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: -100px -200px;
-    margin-top: -50px;
+    margin-top: 0px;
+}
+
+#video {
+    margin: 15px;
+    border: 1px solid var(--purplelight);
+    width: 450px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* *************** Mise en forme de la page Enigme ************************ */
+
+
+/* design de la section dora */
+
+#dora {
+    background-image: url("../Illustrations + Logo/Enigme/Pantherenigme1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -250px;
+    left: -250px;
+    height: 170vh;
+}
+
+.dora {
+    width: 50%;
+    position: relative;
+    left: 850px;
+    top: 450px;
+}
+
+.dora h1 {
+    font-family: "Beyno", sans-serif, serif;
+}
+
+.dora p {
+    position: relative;
+    top: 150px;
+    left: 50px;
+    width: 100%;
+}
+
+.dora img {
+    position: relative;
+    top: -150px;
+    left: -50px;
+}
+
+
+/* design de la section defi */
+
+#defi {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.defi {
+    position: relative;
+}
+
+.defi h2,
+.defi span {
+    font-family: "Wakanda", sans-serif, serif;
+    width: 60%;
+}
+
+.defi form {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.defi p {
+    padding-top: 15px;
+}
+
+.defi img {
+    position: absolute;
+    top: -100px;
+    left: -50px;
+}
+
+.defi form {
+    padding-top: 150px;
+}
+
+.defi input {
+    width: 520px;
+    height: 56px;
+    border-radius: 38px;
+    background: none;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 15px;
+    font-weight: bold;
+}
+
+.defi input[type="submit"] {
+    width: 174px;
+    height: 54px;
+    border: none;
+    background: var(--purplelight);
+    color: var(--bluedark);
+    position: relative;
+    left: 15%;
+    margin-top: 15px;
+}
+
+.defi input[type="submit"]:hover {
+    box-shadow: 0px 0px 20px var(--purplelight);
+}
+
+.savais-tu {
+    position: absolute;
+    top: 200px;
+    left: 450px;
+}
+
+.savais-tu p {
+    text-align: center;
 }
