@@ -1,12 +1,14 @@
 /* ************* Mise en forme generale ************************ */
 
 
-/* reinitialisations de marges */
+/* reinitialisations de marges et fade in des elements*/
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
 
 
@@ -23,7 +25,7 @@
 }
 
 
-/* installation des polices */
+/* mise en place des polices */
 
 @font-face {
     font-family: "Wakanda";
@@ -43,6 +45,20 @@
 @font-face {
     font-family: "Panthera";
     src: url("../Polices/panthera.otf");
+}
+
+
+/* mise en place du fade in */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
 }
 
 
@@ -93,7 +109,11 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: var(--purplegrey);
+    color: var(--white);
+}
+
+nav img:hover {
+    background-color: var(--purplegrey);
 }
 
 
@@ -156,6 +176,10 @@ footer h3 {
     padding-top: 5%;
 }
 
+.logo-foot a:hover img {
+    transform: scale(1.1);
+}
+
 .logo-foot img[alt="logo"] {
     position: relative;
     top: -200px;
@@ -176,8 +200,16 @@ footer h3 {
     text-decoration: none;
 }
 
+.nav-foot ul li a:hover {
+    text-decoration: underline;
+}
+
 .social img {
     margin: 15px;
+}
+
+.social img:hover {
+    transform: scale(1.1);
 }
 
 .copy {
@@ -213,6 +245,10 @@ footer h3 {
 .fixed img {
     display: block;
     margin: 15px -10px;
+}
+
+.fixed img:hover {
+    background-color: var(--white);
 }
 
 .file1 {
@@ -299,7 +335,7 @@ footer h3 {
     border-radius: 25px;
     padding: 50% 5% 25% 5%;
     position: relative;
-    top: -350px;
+    top: -250px;
 }
 
 .card p {
@@ -322,7 +358,7 @@ footer h3 {
 img[alt="t'challa"],
 img[alt="black"] {
     position: relative;
-    top: -75px;
+    top: 15px;
     left: 75px;
     z-index: 10;
 }
@@ -432,16 +468,6 @@ img[alt="black"] {
     background-size: auto;
     background-position: -100px -200px;
     margin-top: 0px;
-}
-
-#video {
-    margin: 15px;
-    border: 1px solid var(--purplelight);
-    width: 450px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
